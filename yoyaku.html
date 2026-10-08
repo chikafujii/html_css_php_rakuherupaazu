@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>yoyaku</title>
+	<style>
+
+	.banner {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.top-header {
+		height: 60px;
+		padding: 10px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+	}
+
+	.logo-area {
+		width: 220px;
+		flex-shrink: 0;
+	}
+	.site-logo {
+		width: 100%;
+		height: auto;
+	}
+
+	.top-nav {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.top-nav a {
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+	.top-nav .reservation-button {
+		background-color: #ef6262;
+		color: white;
+		padding: 14px 24px;
+		border-radius: 30px;
+	}
+	.reservation-button:hover {
+		background-color: #d94d4d;
+	}
+
+
+	.form {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.pagetitle {
+		text-align: center;
+		font-size: 30px;
+		color: #0284A8;
+		font-weight: bold;
+		font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+	}
+
+	/*Reservation fields*/
+	.reservation-form {
+		width: 80%;
+		max-width: 900px;
+		margin: 40px auto;
+	}
+
+	.form-row {
+		margin-bottom: 25px;
+	}
+
+	.form-row label {
+		display: block;
+		margin-bottom: 8px;
+		font-weight: bold;
+	}
+
+	.form-row input,
+	.form-row select,
+	.form-row textarea {
+		width: 100%;
+		padding: 12px;
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		box-sizing: border-box;
+	}
+
+	.required {
+		color: #ef6262;
+	}
+
+	.submit-button {
+		display: block;
+		width: 300px;
+		margin: 40px auto;
+		padding: 16px;
+
+		background-color: #ef6262;
+		color: white;
+		border: none;
+		border-radius: 30px;
+
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.submit-button:hover {
+		background-color: #d94d4d;
+	}
+
+
+	</style>
+
+</head>
+
+<header class="top-header">
+
+	<div class="logo-area">
+		<img src="logo.png" alt="楽へるぱーず" class="site-logo">
+	</div>
+
+	<nav class="top-nav">
+		<a href="index.html">トップ</a>
+		<a href="service.html">サービスについて</a>
+		<a href="price.html">料金のご案内</a>
+		<a href="flow.html">ご利用の流れ</a>
+
+		<a href="yoyaku.html" class="reservation-button">
+			予約申し込み
+		</a>
+	</nav>
+</header>
+
+
+<body>
+	<main>
+
+		<section class="pagetitle"> 
+			<h1>予約申し込み
+			</h1>
+		</section>
+
+		<div class="form">
+			<p>お問い合わせは、以下のフォームよりお気軽にお送りください。<br>必要事項をご記入のうえ、送信をお願いいたします。</p>
+		</div>
+
+		<!-- Reservation fields -->
+			<form action="reserve.php" method="post" class="reservation-form">
+
+				<div class="form-row">
+					<label for="name">お名前 <span class="required">※</span></label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div class="form-row">
+					<label for="email">メールアドレス <span class="required">※</span></label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div class="form-row">
+					<label for="phone">電話番号</label>
+					<input type="tel" id="phone" name="phone">
+				</div>
+
+				<div class="form-row">
+					<label for="service">ご希望サービス <span class="required">※</span></label>
+					<select id="service" name="service" required>
+						<option value="">選択してください</option>
+						<option value="cleaning">清掃・洗濯</option>
+						<option value="cooking">料理</option>
+						<option value="care">介護サポート</option>
+						<option value="pet">植物・ペットのお世話</option>
+					</select>
+				</div>
+
+				<div class="form-row">
+					<label for="reservation_date">ご希望日 <span class="required">※</span></label>
+					<input type="date" id="reservation_date" name="reservation_date" required>
+				</div>
+
+				<div class="form-row">
+					<label for="reservation_time">ご希望時間 <span class="required">※</span></label>
+					<select id="reservation_time" name="reservation_time" required>
+						<option value="">選択してください</option>
+						<option value="09:00">9:00</option>
+						<option value="11:00">11:00</option>
+						<option value="13:00">13:00</option>
+						<option value="15:00">15:00</option>
+					</select>
+				</div>
+
+				<div class="form-row">
+					<label for="message">ご要望</label>
+					<textarea id="message" name="message" rows="6"></textarea>
+				</div>
+
+				<button type="submit" class="submit-button">
+					入力内容を送信
+				</button>
+
+			</form>
+
+	</main>
+
+</body>
+
+</html>

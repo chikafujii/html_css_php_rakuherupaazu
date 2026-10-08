@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>flow</title>
+	<style>
+
+	.banner {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.top-header {
+		height: 60px;
+		padding: 10px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+	}
+
+	.logo-area {
+		width: 220px;
+		flex-shrink: 0;
+	}
+	.site-logo {
+		width: 100%;
+		height: auto;
+	}
+
+	.top-nav {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.top-nav a {
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+	.top-nav .reservation-button {
+		background-color: #ef6262;
+		color: white;
+		padding: 14px 24px;
+		border-radius: 30px;
+	}
+	.reservation-button:hover {
+		background-color: #d94d4d;
+	}
+
+	.diamond {
+		width: 170px;
+		height: 80px;
+		background-color: #0284A8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10%;
+		text-align: center;
+	}
+	.diamond span {
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.steps {
+	width: 80%;
+	max-width: 1000px;
+	margin: 60px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	}
+
+	.step-row {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+	.step-content {
+	flex: 1;
+	}
+
+	.step-content h2 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.step-content p {
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	.pagetitle {
+		text-align: center;
+		font-size: 30px;
+		color: #0284A8;
+		font-weight: bold;
+		font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+	}
+
+
+	</style>
+
+</head>
+
+<header class="top-header">
+
+	<div class="logo-area">
+		<img src="logo.png" alt="楽へるぱーず" class="site-logo">
+	</div>
+
+	<nav class="top-nav">
+		<a href="index.html">トップ</a>
+		<a href="service.html">サービスについて</a>
+		<a href="price.html">料金のご案内</a>
+		<a href="flow.html">ご利用の流れ</a>
+
+		<a href="yoyaku.html" class="reservation-button">
+			予約申し込み
+		</a>
+	</nav>
+</header>
+
+
+<body>
+
+	<main>
+
+		<section class="pagetitle"> 
+			<h1>料金のご案内
+			</h1>
+		</section>
+
+		<div class="steps">
+			<div class="step-row">
+				<div class="diamond">
+					<span>働き世代<br>の方向け
+					</span>
+				</div>
+
+				<div class="step-content">
+					<h2>清掃・洗濯コース</h2>
+					<p>働き世代の方に人気のプランです。90分間で清掃と洗濯を行います。週2回ご利用の場合、1回90分・4,500円で、週9,000円です。</p>
+				</div>
+			</div>
+
+			<div class="step-row">
+				<div class="diamond">
+					<span>一人暮らし<br>の方向け</span>
+				</div>
+
+				<div class="step-content">
+					<h2>介護・清掃トータルコース</h2>
+					<p>清掃に加えて、入浴のサポートやお出かけの付き添いにも対応いたします。1時間4,300円です。</p>
+				</div>
+			</div>
+
+			<div class="step-row">
+				<div class="diamond">
+					<span>旅行予定<br>の方向け</span>
+				</div>
+
+				<div class="step-content">
+					<h2>植物・ペット見守りコース</h2>
+					<p>
+					ご不在中に、定期的な清掃、ペットの散歩や餌やり、植物への水やりなどを行います。1週間、朝夕の1日2回ご利用の場合、7日間 × 2回/日 × 3,000円/回 ＝ 42,000円です。</p>
+				</div>
+			</div>
+
+		</div>
+
+		
+
+	</main>
+
+</body>
+
+</html>

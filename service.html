@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>flow</title>
+	<style>
+
+	.banner {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.top-header {
+		height: 60px;
+		padding: 10px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+	}
+
+	.logo-area {
+		width: 220px;
+		flex-shrink: 0;
+	}
+	.site-logo {
+		width: 100%;
+		height: auto;
+	}
+
+	.top-nav {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.top-nav a {
+		width: auto;
+		height: auto;
+		text-decoration: none;
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+
+	.top-nav .reservation-button {
+		background-color: #ef6262;
+		color: white;
+		padding: 14px 24px;
+		border-radius: 30px;
+	}
+	.reservation-button:hover {
+		background-color: #d94d4d;
+	}
+
+	.steps {
+		margin-left: 120px;
+		margin-top: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 70px;
+	}
+	.diamond {
+		width: 80px;
+		height: 80px;
+		background-color: #0284A8;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 20%;
+	}
+	.diamond span {
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.steps {
+	width: 80%;
+	max-width: 1000px;
+	margin: 60px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	}
+
+	.step-row {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+	}
+	.step-content {
+	flex: 1;
+	}
+
+	.step-content h2 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.step-content p {
+		font-size: 16px;
+		line-height: 1.8;
+	}
+
+	.pagetitle {
+		text-align: center;
+		font-size: 30px;
+		color: #0284A8;
+		font-weight: bold;
+		font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+	}
+
+	</style>
+
+</head>
+
+<header class="top-header">
+
+	<div class="logo-area">
+		<img src="logo.png" alt="楽へるぱーず" class="site-logo">
+	</div>
+
+	<nav class="top-nav">
+		<a href="index.html">トップ</a>
+		<a href="service.html">サービスについて</a>
+		<a href="price.html">料金のご案内</a>
+		<a href="flow.html">ご利用の流れ</a>
+
+		<a href="yoyaku.html" class="reservation-button">
+			予約申し込み
+		</a>
+	</nav>
+</header>
+
+
+<body>
+
+	<main>
+
+		<section class="pagetitle"> 
+			<h1>サービスについて
+			</h1>
+		</section>
+
+		<div class="steps">
+			<div class="step-row">
+				<!-- 料理 -->
+				<div class="diamond">
+					<span>料理</span>
+				</div>
+
+				<div class="step-content">
+					<h2>調理・料理全般</h2>
+					<p>調理師資格を持つスタッフが、冷蔵庫にある食材を中心に献立を考え、作り置きのお料理をお作りします。</p>
+				</div>
+			</div>
+
+			<div class="step-row">
+				<!-- 掃除・洗濯 -->
+				<div class="diamond">
+					<span>清掃</span>
+				</div>
+
+				<div class="step-content">
+					<h2>掃除・洗濯</h2>
+					<p>洗濯から干す作業、取り込みまで対応いたします。アイロンがけも承ります。</p>
+				</div>
+
+			</div>
+
+			<div class="step-row">
+				<!-- 介護 -->
+				<div class="diamond">
+					<span>介護</span>
+				</div>
+
+				<div class="step-content">
+					<h2>介護サービス全般</h2>
+					<p>
+					具体的なご希望や業務内容に応じて、適任のスタッフを選定いたします。</p>
+				</div>
+
+			</div>
+
+			<div class="step-row">
+				<!-- 植物・ペットの世話 -->
+				<div class="diamond">
+					<span>留守</span>
+				</div>
+
+				<div class="step-content">
+					<h2>留守中の植物・ペットの世話</h2>
+					<p>長期のご不在中に、植物への水やりやペットのお世話を承ります。</p>
+				</div>
+
+			</div>
+
+			
+			
+		</div>
+
+	</main>
+
+</body>
+
+</html>
